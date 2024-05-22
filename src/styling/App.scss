@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../fonts/LeagueSpartan-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #73C2FB;
+    font-family: LeagueSpartan;
+}
+
+.portfolio-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
