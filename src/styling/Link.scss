@@ -1,0 +1,17 @@
+@import 'colors';
+
+.link {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    .svg-inline--fa {
+        color: $accent-coral;
+        font-size: 5vw;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            color: $accent-coral-hover;
+            transform: scale(1.1);
+        }
+    }
+}

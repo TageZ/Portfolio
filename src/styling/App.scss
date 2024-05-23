@@ -1,3 +1,5 @@
+@import 'colors';
+
 @font-face {
     font-family: 'LeagueSpartan';
     src: url('../fonts/LeagueSpartan-Bold.otf') format('opentype');
@@ -7,7 +9,7 @@
 
 body{
     margin: 0;
-    background-color: #73C2FB;
+    background-color: $background;
     font-family: LeagueSpartan;
 }
 
