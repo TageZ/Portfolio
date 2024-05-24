@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faFile, fa0 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import '../styling/Link.scss'
@@ -17,12 +18,18 @@ const Link: React.FC<LinkProps> = ({ social, url }) => {
     case 'github':
       icon = faGithub;
       break;
+    case 'email':
+      icon = faEnvelope;
+      break;
+    case 'resume':
+      icon = faFile;
+      break;
     default:
-      icon = faLinkedin;
+      icon = fa0;
   }
 
   return (
-    <a className='link' title={social} href={url}>
+    <a className='link' title={social} href={url} target="_blank">
       <FontAwesomeIcon icon={icon}/>
     </a>
   );
