@@ -3,15 +3,23 @@
 .link {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
+    height: 5vw;
+    width: 5vw;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    background-color: $accent-coral;
+    transition: 0.3s ease;
 
-    .svg-inline--fa {
-        color: $accent-coral;
-        font-size: 5vw;
-        transition: transform 0.3s ease;
+    &:hover {
+        background-color: $accent-coral-hover;
+        transform: scale(1.1);
+    }
 
-        &:hover {
-            color: $accent-coral-hover;
-            transform: scale(1.1);
-        }
+    svg {
+        font-size: 4vw;
+        color: $background;
     }
 }

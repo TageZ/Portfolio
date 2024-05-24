@@ -16,7 +16,7 @@ function About() {
               <hr className='line'/>
               <div className='links'>
                 <Link social="resume" url="https://docs.google.com/document/d/e/2PACX-1vTUDrOfPco1iaIwPd5eMXGBuKyleW1hXBN8ClYHEZ_ylek7A5yj8tVmiQxg4dCTlbg7Vp9UfeTkoLJp/pub"/>
-                <Link social="linked-in" url="https://www.linkedin.com/in/tage-zerby"/>
+                <Link social="linkedin" url="https://www.linkedin.com/in/tage-zerby"/>
                 <Link social="github" url="https://www.github.com/TageZ"/>
                 <Link social="email" url="mailto:tagezerby@gmail.com"/>
                 
