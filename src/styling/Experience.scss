@@ -1,12 +1,36 @@
 @import 'colors';
 
 .experience{
-    padding-top: 4vh;
-    height: 90vh;
+    padding-top: 6vh;
+    height: 88vh;
     width: 80%;
 }
 
 .title{
     font-size: 3vw;
     color: $text-color;
+}
+
+.experience-grid{
+    padding-top: 2.5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+}
+
+.experience-info{
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    background-color: $primary;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 1vw;
+    transition: 0.25s ease;
+
+    &:hover{
+        transform: scale(1.025);
+        cursor: pointer;
+    }
 }
