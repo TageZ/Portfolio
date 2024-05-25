@@ -18,9 +18,9 @@ body{
 }
 
 .portfolio-section{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 6vh;
+    border-bottom: 0.1vh solid $accent-gray;
 }

@@ -2,7 +2,7 @@
 
 function Education(){
     return (
-        <div className="portfolio-section">asdf</div>
+        <div>asdf</div>
     )
 }
 
