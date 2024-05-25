@@ -1,18 +1,24 @@
-import { Link } from 'react-router-dom';
-import '../styling/Navbar.scss'
+import '../styling/Navbar.scss';
 
-function NavBar(){
-    return (
-      <nav className="navBar">
-        <ul>
-            <li><Link to="/"><span className='nav-text'>About</span></Link></li>
-            <li><Link to="/#experience"><span className='nav-text'>Experience</span></Link></li>
-            <li><Link to="/#projects"><span className='nav-text'>Projects</span></Link></li>
-            <li><Link to="/#education"><span className='nav-text'>Education</span></Link></li>
-            <li><Link to="/#skills"><span className='nav-text'>Skills</span></Link></li>
-        </ul>
-      </nav>
-    );
-};
+function NavBar() {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-export default NavBar;
+  return (
+    <nav className="navBar">
+      <ul>
+        <li><a href="#about" onClick={() => scrollToSection('about')}><span className="nav-text">About</span></a></li>
+        <li><a href="#experience" onClick={() => scrollToSection('experience')}><span className="nav-text">Experience</span></a></li>
+        <li><a href="#projects" onClick={() => scrollToSection('projects')}><span className="nav-text">Projects</span></a></li>
+        <li><a href="#education" onClick={() => scrollToSection('education')}><span className="nav-text">Education</span></a></li>
+        <li><a href="#skills" onClick={() => scrollToSection('skills')}><span className="nav-text">Skills</span></a></li>
+      </ul>
+    </nav>
+   );
+  }
+  
+  export default NavBar;

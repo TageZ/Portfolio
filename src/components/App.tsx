@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../styling/App.scss';
 import About from './About';
 import Experience from './Experience';
@@ -9,18 +8,16 @@ import NavBar from './Navbar';
 
 function App() {
   return (
-    <Router>
+    <div className="App">
       <NavBar />
       <div className="content">
-        <Routes>
-          <Route path="/" Component={About} />
-          <Route path="/#education" Component={Education} />
-          <Route path="/#experience" Component={Experience} />
-          <Route path="/#projects" Component={Projects} />
-          <Route path="/#skills" Component={Skills} />
-        </Routes>
+        <section id="about"><About /></section>
+        <section id="experience"><Experience /></section>
+        <section id="projects"><Projects /></section>
+        <section id="education"><Education /></section>
+        <section id="skills"><Skills /></section>
       </div>
-    </Router>
+    </div>
   );
 }
 

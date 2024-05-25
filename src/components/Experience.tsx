@@ -1,6 +1,10 @@
 function Experience(){
     return (
-        <div></div>
+        <div className='portfolio-section' aria-label='experience'>
+            <div className='experience'>
+                Experience:
+            </div>
+        </div>
     )
 }
 
