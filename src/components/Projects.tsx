@@ -1,3 +1,9 @@
+import pegsAndJokers from '../assets/pegs-jokers.png'
+import plResource from '../assets/pl-resource.png'
+import portfolio from '../assets/portfolio.png'
+import '../styling/Projects.scss'
+
+
 function Projects(){
     return (
         <div className='portfolio-section' aria-label='projects'>
@@ -8,13 +14,13 @@ function Projects(){
                         TBA
                     </div>
                     <div className='grid-item'>
-                        Pegs & Jokers
+                        <img className='projects-image' src={pegsAndJokers}></img>
                     </div>
                     <div className='grid-item'>
-                        Premier League Resource
+                        <img className='projects-image' src={plResource}></img>
                     </div>
                     <div className='grid-item'>
-                        Portfolio Website
+                    <img className='projects-image' src={portfolio}></img>
                     </div>
                 </div>
             </div>

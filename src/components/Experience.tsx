@@ -10,7 +10,7 @@ function Experience(){
                         Software Engineering Intern - Principal Financial Group
                     </div>
                     <div className='grid-item'>
-                        Software Development Intern - Hudl Design Studio Team
+                        Software Development Intern - Hudl - Design Studio
                     </div>
                     <div className='grid-item'>
                         Computer Science Teaching Assistant - Raikes School
