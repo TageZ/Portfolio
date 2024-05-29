@@ -27,7 +27,7 @@ function Projects(){
                         <img className='projects-image' src={plResource}></img>
                     </div>
                     <div className='grid-item'>
-                    <img className='projects-image' src={portfolio}></img>
+                        <img className='projects-image' src={portfolio}></img>
                     </div>
                 </div>
             </div>
