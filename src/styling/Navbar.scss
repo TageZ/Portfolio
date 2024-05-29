@@ -7,9 +7,15 @@
     box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     position: fixed; 
     top: 0vh;
+    z-index: 1000;
+}
+
+.nav-title{
+    margin-left: 2vw;
+    pointer-events: none;
 }
 
 .navBar-list{

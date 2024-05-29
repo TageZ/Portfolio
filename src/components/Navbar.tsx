@@ -10,6 +10,7 @@ function NavBar() {
 
   return (
     <nav className="navBar">
+      <div className='nav-title'><span className="nav-text">Tage Zerby</span></div>
       <ul className='navBar-list'>
         <li className='navBar-list-item'><a href="#about" onClick={() => scrollToSection('about')}><span className="nav-text">About</span></a></li>
         <li className='navBar-list-item'><a href="#experience" onClick={() => scrollToSection('experience')}><span className="nav-text">Experience</span></a></li>
