@@ -14,11 +14,11 @@ function Projects(){
 
     return (
         <div className='portfolio-section' aria-label='projects'>
+            <div className='title-container'>
+                Projects
+            </div>
             <div className='projects'>
                 <div className='grid'>
-                    <div className='grid-item'>
-                        TBA
-                    </div>
                     <div className='grid-item'>
                         <img className='projects-image' src={pegsAndJokers}></img>
                     </div>

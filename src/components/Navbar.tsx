@@ -12,36 +12,36 @@ function NavBar() {
     }
   };
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    console.log(sections);
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.25
-    };
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll('section');
+  //   console.log(sections);
+  //   const options = {
+  //     root: null,
+  //     rootMargin: '0px',
+  //     threshold: 0.25
+  //   };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          if (id){
-            setLabel(id.charAt(0).toUpperCase() + id.slice(1));
-          }
-        }
-      });
-    }, options);
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         const id = entry.target.getAttribute('id');
+  //         if (id){
+  //           setLabel(id.charAt(0).toUpperCase() + id.slice(1));
+  //         }
+  //       }
+  //     });
+  //   }, options);
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
+  //   sections.forEach(section => {
+  //     observer.observe(section);
+  //   });
 
-    return () => {
-      sections.forEach(section => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
+  //   return () => {
+  //     sections.forEach(section => {
+  //       observer.unobserve(section);
+  //     });
+  //   };
+  // }, []);
 
   return (
     <nav className="navBar">
