@@ -4,6 +4,9 @@ import principal from '../assets/principal.png'
 function Experience(){
     return (
         <div className='portfolio-section' aria-label='experience'>
+            <div className='title-container'>
+                Experience
+            </div>
             <div className='experience'>
                 <div className='grid'>
                     <div className='grid-item'>
