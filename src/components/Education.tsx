@@ -4,7 +4,6 @@ function Education(){
     return (
         <div className='portfolio-section' aria-label='education'>
             <div className='education'>
-                <span className='title'>Education</span>
                 <div className='grid'>
                     <div className='grid-item'>
                         University of Nebraska - Lincoln

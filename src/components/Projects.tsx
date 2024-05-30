@@ -15,7 +15,6 @@ function Projects(){
     return (
         <div className='portfolio-section' aria-label='projects'>
             <div className='projects'>
-                <span className='title'>Projects</span>
                 <div className='grid'>
                     <div className='grid-item'>
                         TBA
