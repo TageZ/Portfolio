@@ -1,5 +1,7 @@
 import '../styling/Grid.scss'
 import principal from '../assets/principal.png'
+import hudl from '../assets/hudl.jpg'
+import collins from '../assets/collins.png'
 
 function Experience(){
     return (
@@ -14,13 +16,15 @@ function Experience(){
                         {/* Software Engineering Intern - Principal Financial Group */}
                     </div>
                     <div className='grid-item'>
-                        Software Development Intern - Hudl - Design Studio
+                        <img className='projects-image' src={hudl}></img>
+                        {/* Software Development Intern - Hudl - Design Studio */}
                     </div>
                     <div className='grid-item'>
                         Computer Science Teaching Assistant - Raikes School
                     </div>
                     <div className='grid-item'>
-                        IT Intern - Collins Engineers
+                        <img className='projects-image' src={collins}></img>
+                        {/* IT Intern - Collins Engineers */}
                     </div>
                 </div>
             </div>
