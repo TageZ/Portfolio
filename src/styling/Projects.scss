@@ -9,6 +9,14 @@
     border-style: solid;
 }
 
+.company-image{
+    height: 25%;
+    width: auto;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
 .projects{
     flex: 1;
     display: flex;
