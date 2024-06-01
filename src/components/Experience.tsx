@@ -17,23 +17,24 @@ function Experience(){
             <div className='experience'>
                 <div className='grid'>
                     <div className='grid-item'>
-                        <img className='projects-image' src={desmoines}></img>
+                        <img className='experience-image' src={desmoines}></img>
                         <img className='company-image' src={principal}></img>
-                        {/* Software Engineering Intern - Principal Financial Group */}
+                        <span className='role-text'>Software Engineering Intern</span>
                     </div>
                     <div className='grid-item'>
-                        <img className='projects-image' src={lincoln}></img>
+                        <img className='experience-image' src={lincoln}></img>
                         <img className='company-image' src={hudl}></img>
-                        {/* Software Development Intern - Hudl - Design Studio */}
+                        <span className='role-text'>Software Development Intern - Design Studio</span>
                     </div>
                     <div className='grid-item'>
-                        <img className='projects-image' src={kauffman}></img>
+                        <img className='experience-image' src={kauffman}></img>
                         <img className='company-image' src={raikes}></img>
+                        <span className='role-text'>Computer Science Teaching Assistant</span>
                     </div>
                     <div className='grid-item'>
-                        <img className='projects-image' src={chicago}></img>
+                        <img className='experience-image' src={chicago}></img>
                         <img className='company-image' src={collins}></img>
-                        {/* IT Intern - Collins Engineers */}
+                        <span className='role-text'>IT Intern</span>
                     </div>
                 </div>
             </div>
