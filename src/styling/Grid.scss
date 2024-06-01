@@ -22,13 +22,13 @@
     border-radius: 1vw;
     font-size: 1.5vw;
     transition: 0.3s ease;
-    background: $accent-gray;
+    background: $primary;
     
     &:hover{
         transform: scale(1.03);
         cursor: pointer;
         .experience-image {
-            opacity: 80%;
+            opacity: 90%;
         }
     }
 }
