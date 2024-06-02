@@ -1,7 +1,7 @@
 import '../styling/Grid.scss'
 import scn from '../assets/scn.jpg'
 import unl from '../assets/unl.jpg'
-import Box from './Experience-Box'
+import Box from './Box'
 
 function Education(){
     return (

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../styling/Box.scss';
 import data from '../utils/info.json';
 
@@ -7,6 +6,9 @@ interface BoxProps {
     location: string;
     role: string;
     tag?: string;
+    clickedBox: string | null;
+    isVisible: boolean;
+    onBoxClick: (tag: string) => void;
 }
 
 interface Info {
@@ -22,10 +24,11 @@ interface Info {
 
 function Box(props: BoxProps) {
     const info: Info = data;
-    const [clicked, setClicked] = useState(false);
 
     function handleClick() {
-        setClicked(!clicked);
+        if (props.tag) {
+            props.onBoxClick(props.tag);
+        }
     }
 
     function Front() {
@@ -51,7 +54,7 @@ function Box(props: BoxProps) {
 
     return (
         <div>
-            {!clicked ? <Front /> : <Back />}
+            {props.isVisible ? (!props.clickedBox || props.clickedBox !== props.tag ? <Front /> : <Back />) : null}
         </div>
     );
 }

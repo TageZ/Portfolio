@@ -10,3 +10,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1vw;
 }
+
+.solo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
