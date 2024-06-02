@@ -10,25 +10,3 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1vw;
 }
-
-.grid-item{
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: calc(78vw/2 * 9/16);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1vw;
-    font-size: 1.5vw;
-    transition: 0.3s ease;
-    background: $primary;
-    
-    &:hover{
-        transform: scale(1.03);
-        cursor: pointer;
-        .experience-image {
-            opacity: 90%;
-        }
-    }
-}

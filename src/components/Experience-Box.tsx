@@ -1,9 +1,11 @@
 import {useState} from 'react';
+import '../styling/Box.scss'
 
 interface BoxProps {
     company?: string;
     location: string;
     role: string;
+    tag?: string;
 }
 
 function Box(props: BoxProps) {
@@ -23,10 +25,19 @@ function Box(props: BoxProps) {
         )
     }
 
+    function Back(props: BoxProps){
+        return (
+            <div className='grid-item' onClick={() => handleClick()}>
+                {//Fill in
+                }
+            </div>
+        )
+    }
+
     return (
         <div>
             {clicked ? (
-                <div className='grid-item'  onClick={() => handleClick()}>Hello!</div>
+                <Back {...props} />
             ) : (
                 <Box {...props} />
             )}
