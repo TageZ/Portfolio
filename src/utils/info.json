@@ -1,0 +1,34 @@
+{
+    "pfg": {
+        "name": "Principal Financial Group",
+        "title": "Software Engineering Intern",
+        "location": "Des Moines, IA",
+        "date": "Summer 2024",
+        "p1": "Developed...",
+        "p2": "Learned..."
+    },
+    "hudl": {
+        "name": "Hudl",
+        "title": "Software Development Intern - Design Studio",
+        "location": "Lincoln, NE",
+        "date": "Fall 2023",
+        "p1": "Developed...",
+        "p2": "Learned..."
+    },
+    "raikes": {
+        "name": "the Raikes School @ UNL",
+        "title": "Computer Science Teaching Assistant",
+        "location": "Lincoln, NE",
+        "date": "Fall 2023 -",
+        "p1": "Developed...",
+        "p2": "Learned..."
+    },
+    "collins": {
+        "name": "Collins Engineers",
+        "title": "IT Intern",
+        "location": "Chicago, IL",
+        "date": "Summer 2023",
+        "p1": "Developed...",
+        "p2": "Learned..."
+    }
+}

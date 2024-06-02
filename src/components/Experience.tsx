@@ -17,10 +17,10 @@ function Experience(){
             </div>
             <div className='experience'>
                 <div className='grid'>
-                    <Box location={desmoines} company={principal} role="Software Engineering Intern"/>
-                    <Box location={lincoln} company={hudl} role="Software Development Intern - Design Studio"/>
-                    <Box location={kauffman} company={raikes} role="Computer Science Teaching Assistant"/>
-                    <Box location={chicago} company={collins} role="IT Intern"/>
+                    <Box location={desmoines} company={principal} role="Software Engineering Intern" tag="pfg"/>
+                    <Box location={lincoln} company={hudl} role="Software Development Intern - Design Studio" tag="hudl"/>
+                    <Box location={kauffman} company={raikes} role="Computer Science Teaching Assistant" tag="raikes"/>
+                    <Box location={chicago} company={collins} role="IT Intern" tag="collins"/>
                 </div>
             </div>
         </div>
