@@ -44,9 +44,9 @@ function Box(props: BoxProps) {
     function Back() {
         return (
             <div className='grid-item back' onClick={handleClick}>
-                {props.tag && <span className="date-back">{info[props.tag].date}</span>}
                 {props.tag && <span className="title-back">{info[props.tag].title}</span>}
                 {props.tag && <span className="name-back">{info[props.tag].name}</span>}
+                {props.tag && <span className="date-back">{info[props.tag].date}</span>}
                 {props.tag && <span className="location-back">{info[props.tag].location}</span>}
             </div>
         );

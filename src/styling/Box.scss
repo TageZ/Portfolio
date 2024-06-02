@@ -26,6 +26,15 @@
         width: 80vw;
         height: calc(39.5vw * 9/16 * 2 + 1vw);
         background: $accent-coral;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        text-align: left;
+
+        span{
+            padding-left: 1vw;
+        }
 
         &:hover {
             transform: none;
@@ -35,29 +44,14 @@
 
 .name-back{
     font-size: 2vw;
-    height: 25%;
     width: 100%;
-    position: absolute;
-    text-align: left;
-    top: calc(2% + 4vw);;
-    left: 2%;
 }
 
 .date-back{
-    height: 25%;
     width: 100%;
-    position: absolute;
-    text-align: left;
-    top: calc(2% + 7vw);
-    left: 2%;
 }
 
 .title-back{
     font-size: 3vw;
-    height: 25%;
     width: 100%;
-    text-align: left;
-    position: absolute;
-    top: 2%;
-    left: 2%;
 }
