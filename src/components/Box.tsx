@@ -13,7 +13,7 @@ interface BoxProps {
 
 interface Info {
     [key: string]: {
-        name: string;
+        name?: string;
         title: string;
         location?: string;
         date: string;

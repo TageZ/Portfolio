@@ -30,5 +30,19 @@
         "date": "Summer 2023",
         "p1": "Developed...",
         "p2": "Learned..."
+    },
+    "unl": {
+        "title": "University of Nebraska - Lincoln",
+        "location": "Lincoln, NE",
+        "date": "2022 - 2026",
+        "p1": "Raikes Schoool...",
+        "p2": "Clasess.."
+    },
+    "scn": {
+        "title": "Saint Charles North High School",
+        "location": "Saint Charles, IL",
+        "date": "Graduated May 2022",
+        "p1": "1500 SAT - 99th Percentile",
+        "p2": "4.34/4.00 GPA - Top 10% of Class"
     }
 }
