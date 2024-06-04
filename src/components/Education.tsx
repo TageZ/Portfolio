@@ -20,8 +20,8 @@ function Education(){
                 Education
             </div>
             <div className='education'>
-                <div className='grid'>
-                <Box
+                <div className={divName}>
+                    <Box
                         location={unl}
                         role="University of Nebraska - Lincoln"
                         tag="unl"
