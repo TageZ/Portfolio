@@ -53,9 +53,12 @@ function Box(props: BoxProps) {
                     {props.tag && <span className="date-back">{info[props.tag].date} | </span>}
                     {props.tag && <span className="location-back">{info[props.tag].location}</span>}
                 </div>
-                <div className='paragraph-box'>
-                    {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
-                    {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
+                <div className='info-image-box'>
+                    <div className='paragraph-box'>
+                        {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
+                        {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
+                    </div>
+                    {/* {props.company && <img className='image-back' src={props.company}/>} */}
                 </div>
             </div>
         );
