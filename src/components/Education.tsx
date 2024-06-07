@@ -28,6 +28,7 @@ function Education(){
                         clickedBox={clickedBox}
                         isVisible={clickedBox === null || clickedBox === 'unl'}
                         onBoxClick={handleBoxClick}
+                        type='education'
                     />
                     <Box
                         location={scn}
@@ -36,6 +37,7 @@ function Education(){
                         clickedBox={clickedBox}
                         isVisible={clickedBox === null || clickedBox === 'scn'}
                         onBoxClick={handleBoxClick}
+                        type='education'
                     />
                 </div>
             </div>

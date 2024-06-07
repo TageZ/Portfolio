@@ -25,7 +25,14 @@
     &.back{
         width: 80vw;
         height: calc(39.5vw * 9/16 * 2 + 1vw);
-        background: $accent-coral;
+        &.education{
+            height: calc(39.5vw * 9/16);
+        }
+        background: $accent-light-gray;
+        border-radius: 1vw;
+        border-color: $accent-gray;
+        border-width: 0.15vw;
+        border-style: solid;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -62,10 +69,16 @@
 .name-back{
     font-size: 2.5vw;
     width: 60%;
+    color: $primary;
+    // -webkit-text-stroke-width: 0.1vw;
+    // -webkit-text-stroke-color: black;
 }
 
 .title-back{
     font-size: 3vw;
     width: 60%;
     margin-bottom: .5vw;
+    color: $primary;
+    // -webkit-text-stroke-width: 0.1vw;
+    // -webkit-text-stroke-color: black;
 }

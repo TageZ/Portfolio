@@ -2,6 +2,7 @@ import '../styling/Box.scss';
 import data from '../utils/info.json';
 
 interface BoxProps {
+    type?: string;
     company?: string;
     location: string;
     role: string;
@@ -43,7 +44,7 @@ function Box(props: BoxProps) {
 
     function Back() {
         return (
-            <div className='grid-item back' onClick={handleClick}>
+            <div className={`grid-item back ${props.type}`} onClick={handleClick}>
                 <div className="title-name-box">
                     {props.tag && <span className="title-back">{info[props.tag].title}</span>}
                     {props.tag && <span className="name-back">{info[props.tag].name}</span>}
