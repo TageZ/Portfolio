@@ -20,16 +20,16 @@
         "title": "Computer Science Teaching Assistant",
         "location": "Lincoln, NE",
         "date": "Fall 2023 -",
-        "p1": "Developed...",
-        "p2": "Learned..."
+        "p1": "- Instruct 40 Raikes Honors CS 1-2 students through TA hours, labs, and lectures. Review/grade assignments, tests, and labs.",
+        "p2": "- Expanded knowledge of: Java, mySQL, OOP, algorithms, data structures, discrete math, relations, the terminal, and GUIs."
     },
     "collins": {
         "name": "Collins Engineers",
         "title": "IT Intern",
         "location": "Chicago, IL",
         "date": "Summer 2023",
-        "p1": "Developed...",
-        "p2": "Learned..."
+        "p1": "- Engineered an optimized system for onboarding and offboarding all company employees utilizing Powershell and JS scripts.",
+        "p2": "- Customized automated HR and IT messages used in the onboarding and offboarding processes using HTML and CSS."
     },
     "unl": {
         "title": "University of Nebraska - Lincoln",
