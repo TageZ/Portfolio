@@ -58,7 +58,9 @@ function Box(props: BoxProps) {
                         {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
                         {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
                     </div>
-                    {/* {props.company && <img className='image-back' src={props.company}/>} */}
+                    <div className='image-box'>
+                        {props.company && <img className='image-back' src={props.company}/>}    
+                    </div>
                 </div>
             </div>
         );

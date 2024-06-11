@@ -59,22 +59,25 @@
 }
 
 .info-image-box{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .image-back{
-        width: 10%;
-        
-    }
-}
-
-.paragraph-box{
     margin: 1vw;
     margin-top: 0;
     height: 100%;
-    width: calc(50% - 2vw);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    .image-back{
+        width: 100%;
+    }
+}
+
+.image-box{
+    flex: 30%;
+}
+
+.paragraph-box{
+    height: 100%;
+    flex: 70%;
     display: flex;
     flex-direction: column;
 }
