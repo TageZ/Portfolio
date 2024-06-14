@@ -4,32 +4,32 @@
         "title": "Software Engineering Intern",
         "location": "Des Moines, IA",
         "date": "Summer 2024",
-        "p1": "Developed...",
-        "p2": "Learned..."
+        "p1": "Agile team of ~10 developers | TypeScript/React/Java/Kotlin/Scss/Next.js/Spring"
     },
     "hudl": {
         "name": "Hudl",
         "title": "Software Development Intern - Design Studio",
         "location": "Lincoln, NE",
         "date": "Fall 2023",
-        "p1": "Developed...",
-        "p2": "Learned..."
+        "p1": "Produced an extension of Hudl Assist specifically for field hockey, collaborating with an agile team of six.",
+        "p2": "Developed and implemented logic in C# to document shot attempts and related statistics for coach and team analysis.",
+        "p3": "Engineered the front-end interface for selecting multiple game events, such as shots and passes using React and TypeScript."
     },
     "raikes": {
         "name": "the Raikes School @ UNL",
         "title": "Computer Science Teaching Assistant",
         "location": "Lincoln, NE",
         "date": "Fall 2023 -",
-        "p1": "- Instruct 40 Raikes Honors CS 1-2 students through TA hours, labs, and lectures. Review/grade assignments, tests, and labs.",
-        "p2": "- Expanded knowledge of: Java, SQL, OOP, algorithms, data structures, discrete math, relations, the terminal, and GUIs."
+        "p1": "Instruct 40 Raikes Honors CS 1-2 students through TA hours, labs, and lectures. Review/grade assignments, tests, and labs.",
+        "p2": "Expanded knowledge of: Java, SQL, OOP, algorithms, data structures, discrete math, relations, the terminal, and GUIs."
     },
     "collins": {
         "name": "Collins Engineers",
         "title": "IT Intern",
         "location": "Chicago, IL",
         "date": "Summer 2023",
-        "p1": "- Engineered an optimized system for onboarding and offboarding all company employees utilizing Powershell and JS scripts.",
-        "p2": "- Customized automated HR and IT messages used in the onboarding and offboarding processes using HTML and CSS."
+        "p1": "Engineered an optimized system for onboarding and offboarding all company employees utilizing Powershell and JS scripts.",
+        "p2": "Customized automated HR and IT messages used in the onboarding and offboarding processes using HTML and CSS."
     },
     "unl": {
         "title": "University of Nebraska - Lincoln",

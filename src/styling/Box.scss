@@ -11,15 +11,11 @@
     justify-content: center;
     border-radius: 1vw;
     font-size: 1.5vw;
-    transition: 0.1s ease;
-    background: $primary;
+    transition: 0.3s ease;
     
     &:hover{
         transform: scale(1.03);
         cursor: pointer;
-        .experience-image {
-            opacity: 90%;
-        }
     }
 
     &.back{
@@ -30,7 +26,7 @@
         }
         background: $accent-light-gray;
         border-radius: 1vw;
-        border-color: $accent-gray;
+        border-color: black;
         border-width: 0.15vw;
         border-style: solid;
         display: flex;
@@ -46,33 +42,42 @@
 }
 
 .title-name-box{
-    margin: 1vw;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
     display: flex;
+    padding: 1vw;
     flex-direction: column;
     width: calc(100% - 2vw);
+    background-color: $accent-gray;
 }
 
 .date-location-box{
-    margin: 1vw;
-    margin-top: 0;
+    padding: 1vw;
+    padding-top: 0;
+    background-color: $accent-gray;
+    color: white;
     width: calc(100% - 2vw);
 }
 
 .info-image-box{
     margin: 1vw;
     margin-top: 0;
+    margin-bottom: 0;
     height: 100%;
+    width: calc(100% - 2vw);
     display: flex;
     justify-content: left;
     align-items: center;
 
     .image-back{
-        width: 100%;
+        width: calc(100% - 2vw);
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
 .image-box{
-    flex: 30%;
+    width: 50%;
 }
 
 .paragraph-box{
@@ -84,6 +89,7 @@
     .paragraph-back{
         margin-top: 1vw;
         margin-bottom: 1vw;
+        width: 90%;
     }
 }
 

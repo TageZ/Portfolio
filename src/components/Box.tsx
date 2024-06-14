@@ -20,6 +20,7 @@ interface Info {
         date: string;
         p1?: string;
         p2?: string;
+        p3?: string;
     };
 }
 
@@ -57,6 +58,7 @@ function Box(props: BoxProps) {
                     <div className='paragraph-box'>
                         {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
                         {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
+                        {props.tag && <span className="paragraph-back">{info[props.tag].p3}</span>}
                     </div>
                     <div className='image-box'>
                         {props.company && <img className='image-back' src={props.company}/>}    
