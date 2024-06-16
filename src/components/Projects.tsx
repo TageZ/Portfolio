@@ -1,21 +1,14 @@
 import pegsAndJokers from '../assets/pegs-jokers.png'
 import plResource from '../assets/pl-resource.png'
 import portfolio from '../assets/portfolio.png'
-import {useState} from 'react'
 import '../styling/Projects.scss'
 
 function Projects(){
 
-    const [clicked, setClicked] = useState(false);
-
-    function handleClicked(){
-        setClicked(true);
-    }
-
     return (
         <div className='portfolio-section' aria-label='projects'>
             <div className='title-container'>
-                Projects
+                PROJECTS
             </div>
             <div className='projects'>
                 <div className='grid'>

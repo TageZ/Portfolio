@@ -17,7 +17,7 @@ function Education(){
     return (
         <div className='portfolio-section' aria-label='education'>
             <div className='title-container'>
-                Education
+                EDUCATION
             </div>
             <div className='education'>
                 <div className={divName}>

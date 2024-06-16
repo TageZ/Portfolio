@@ -22,7 +22,7 @@ function Experience() {
     return (
         <div className='portfolio-section' aria-label='experience'>
             <div className='title-container'>
-                Experience
+                EXPERIENCE
             </div>
             <div className='experience'>
                 <div className={divName}>
