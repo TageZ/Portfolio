@@ -27,8 +27,9 @@ function Experience() {
             <div className='experience'>
                 <div className={divName}>
                     <Box
-                        location={desmoines}
+                        primaryImage={desmoines}
                         company={principal}
+                        backImage={principal}
                         role="Software Engineering Intern"
                         tag="pfg"
                         clickedBox={clickedBox}
@@ -36,8 +37,9 @@ function Experience() {
                         onBoxClick={handleBoxClick}
                     />
                     <Box
-                        location={lincoln}
+                        primaryImage={lincoln}
                         company={hudl}
+                        backImage={hudl}
                         role="Software Development Intern - Design Studio"
                         tag="hudl"
                         clickedBox={clickedBox}
@@ -45,8 +47,9 @@ function Experience() {
                         onBoxClick={handleBoxClick}
                     />
                     <Box
-                        location={kauffman}
+                        primaryImage={kauffman}
                         company={raikes}
+                        backImage={raikes}
                         role="Computer Science Teaching Assistant"
                         tag="raikes"
                         clickedBox={clickedBox}
@@ -54,8 +57,9 @@ function Experience() {
                         onBoxClick={handleBoxClick}
                     />
                     <Box
-                        location={chicago}
+                        primaryImage={chicago}
                         company={collins}
+                        backImage={collins}
                         role="IT Intern"
                         tag="collins"
                         clickedBox={clickedBox}

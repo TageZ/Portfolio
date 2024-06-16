@@ -20,9 +20,9 @@
 
     &.back{
         width: 75vw;
-        height: calc(34vw * 9/16 * 2 + 1vw);
+        height: calc(37vw * 9/16 * 2 + 1vw);
         &.education{
-            height: calc(34vw * 9/16);
+            height: calc(37vw * 9/16);
         }
         background: $accent-light-gray;
         border-radius: 1vw;
@@ -73,6 +73,7 @@
         width: calc(100% - 2vw);
         margin-left: 1vw;
         margin-right: 1vw;
+        border-radius: 1vw;
     }
 }
 

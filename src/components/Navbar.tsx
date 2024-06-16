@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import '../styling/Navbar.scss';
 
 function NavBar() {

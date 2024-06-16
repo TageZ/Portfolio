@@ -44,5 +44,20 @@
         "date": "Graduated May 2022",
         "p1": "1500 SAT - 99th Percentile",
         "p2": "4.34/4.00 GPA - Top 10% of Class"
+    },
+    "pegsAndJokers": {
+        "title": "Pegs & Jokers",
+        "date": "Spring 2024",
+        "p1": ""
+    },
+    "plResource": {
+        "title": "Premier League Resource",
+        "date": "Fall 2023",
+        "p1": ""
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "date": "Summer 2024",
+        "p1": ""
     }
 }

@@ -22,7 +22,7 @@ function Education(){
             <div className='education'>
                 <div className={divName}>
                     <Box
-                        location={unl}
+                        primaryImage={unl}
                         role="University of Nebraska - Lincoln"
                         tag="unl"
                         clickedBox={clickedBox}
@@ -31,7 +31,7 @@ function Education(){
                         type='education'
                     />
                     <Box
-                        location={scn}
+                        primaryImage={scn}
                         role="Saint Charles North High School"
                         tag="scn"
                         clickedBox={clickedBox}

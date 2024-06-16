@@ -7,6 +7,22 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $accent-light-gray;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $accent-coral;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: $accent-coral-hover;
+  }
+
 html {
     scroll-behavior: smooth;
     user-select: none;
