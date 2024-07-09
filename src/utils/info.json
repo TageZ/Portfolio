@@ -20,7 +20,7 @@
         "title": "Computer Science Teaching Assistant",
         "location": "Lincoln, NE",
         "date": "Fall 2023 -",
-        "p1": "Instruct 40 Raikes Honors CS 1-2 students through TA hours, labs, and lectures. Review/grade assignments, tests, and labs.",
+        "p1": "Instruct 40 Raikes Honors CS students through TA hours, labs, and lectures. Review/grade assignments, tests, and labs.",
         "p2": "Expanded knowledge of: Java, SQL, OOP, algorithms, data structures, discrete math, relations, the terminal, and GUIs."
     },
     "collins": {
@@ -48,12 +48,16 @@
     "pegsAndJokers": {
         "title": "Pegs & Jokers",
         "date": "Spring 2024",
-        "p1": ""
+        "p1": "Developed a multiplayer web browser game in React.js where users can play the board game with up to three other players.",
+        "p2": "Engineered game logic to validate all player moves in Java, utilizing the Spring Boot framework with an MVC architecture.",
+        "p3": "Built real-time game lobbies using Socket.IO; integrated custom user profiles with Firebase; designed an intuitive UI in CSS."
     },
     "plResource": {
         "title": "Premier League Resource",
         "date": "Fall 2023",
-        "p1": ""
+        "p1": "Created a full-stack web app in React/TypeScript that displays EPL soccer information such as a team’s matches and stats.",
+        "p2": "Developed backend using Python, BeautifulSoup, and Flask to scrape information for >1,000 player stats and >700 matches.",
+        "p3": "Designed a complete UI that resembles the English Premier League’s own style and aesthetic using SCSS."
     },
     "portfolio": {
         "title": "Portfolio",
