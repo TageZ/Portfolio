@@ -6,6 +6,7 @@ interface BoxProps {
     company?: string;
     primaryImage: string;
     backImage?: string;
+    backImageAlt?: string;
     role?: string;
     tag?: string;
     clickedBox: string | null;
@@ -22,6 +23,7 @@ interface Info {
         p1?: string;
         p2?: string;
         p3?: string;
+        p4?: string;
     };
 }
 
@@ -60,9 +62,10 @@ function Box(props: BoxProps) {
                         {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
                         {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
                         {props.tag && <span className="paragraph-back">{info[props.tag].p3}</span>}
+                        {props.tag && <span className="paragraph-back">{info[props.tag].p4}</span>}
                     </div>
                     <div className='image-box'>
-                        {props.backImage && <img className='image-back' src={props.backImage}/>}    
+                        {props.backImage && <img className='image-back' src={props.backImage} title={props.backImageAlt? props.backImageAlt : ""}/>}    
                     </div>
                 </div>
             </div>

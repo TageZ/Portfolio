@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styling/Grid.scss';
 import principal from '../assets/principal.png';
+import contractapp from '../assets/contractapp.png'
 import lincoln from '../assets/lincoln.jpg';
 import desmoines from '../assets/des-moines.jpg';
 import kauffman from '../assets/kauffman.jpg';
@@ -29,7 +30,8 @@ function Experience() {
                     <Box
                         primaryImage={desmoines}
                         company={principal}
-                        backImage={principal}
+                        backImage={contractapp}
+                        backImageAlt='A new user interface I created to modernize an existing application owned by my team'
                         role="Software Engineering Intern"
                         tag="pfg"
                         clickedBox={clickedBox}

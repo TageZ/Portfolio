@@ -4,7 +4,9 @@
         "title": "Software Engineering Intern",
         "location": "Des Moines, IA",
         "date": "Summer 2024",
-        "p1": "Agile team of ~10 developers | TypeScript/React/Java/Kotlin/Scss/Next.js/Spring"
+        "p1": "Worked in an Agile team of ~15 developers developing applications to onboard and update > 75,000 active client retirement plans.",
+        "p2": "Engineered the front-end interface for multiple React/Typescript/Scss web applications and gained experience in AWS lambda.",
+        "p3": "Developed > 5,000 new lines of code and helped maintain multiple Java/Spring REST apis which connected to a SQL database."
     },
     "hudl": {
         "name": "Hudl",
