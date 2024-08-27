@@ -6,7 +6,7 @@
         "date": "Summer 2024",
         "p1": "Worked in an Agile team of ~15 developers developing applications to onboard and update > 75,000 active client retirement plans.",
         "p2": "Engineered the front-end interface for multiple React/Typescript/Scss web applications and gained experience in AWS lambda.",
-        "p3": "Developed > 5,000 new lines of code and helped maintain multiple Java/Spring REST apis which connected to a SQL database."
+        "p3": "Prod-deployed > 5,000 new lines of code; maintained multiple Java/Spring REST apis which connected to a SQL database."
     },
     "hudl": {
         "name": "Hudl",
