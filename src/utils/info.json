@@ -59,7 +59,8 @@
         "date": "Fall 2023",
         "p1": "Created a full-stack web app in React/TypeScript that displays EPL soccer information such as a team’s matches and stats.",
         "p2": "Developed backend using Python, BeautifulSoup, and Flask to scrape information for >1,000 player stats and >700 matches.",
-        "p3": "Designed a complete UI that resembles the English Premier League’s own style and aesthetic using SCSS."
+        "p3": "Designed a complete UI that resembles the English Premier League’s own style and aesthetic using SCSS.",
+        "p4": "Hosted the frontend on Firebase; created a Docker container for the backend Flask app and hosted that using AWS Lightsail."
     },
     "portfolio": {
         "title": "Portfolio",
