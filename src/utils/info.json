@@ -65,6 +65,8 @@
     "portfolio": {
         "title": "Portfolio",
         "date": "Summer 2024",
-        "p1": ""
+        "p1": "The website that you are currently looking at!",
+        "p2": "Developed a React.js/TypeScript application that dynamically displays my portfolio information; hosted using Firebase.",
+        "p3": "Designed a variety of UI components from scratch using SCSS."
     }
 }
