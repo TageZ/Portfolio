@@ -1,0 +1,15 @@
+.skills{
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1vw;
+
+    .skill{
+        height: 12vh;
+        font-size: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vh;
+    }
+}

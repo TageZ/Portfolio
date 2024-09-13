@@ -1,0 +1,54 @@
+[
+    {
+        "name": "React",
+        "hex": "#61DAFB"
+    },
+    {
+        "name": "TypeScript",
+        "hex": "#3178C6"
+    },
+    {
+        "name": "Java",
+        "hex": "#007396"
+    },
+    {
+        "name": "Python",
+        "hex": "#3776AB"
+    },
+    {
+        "name": "CSS",
+        "hex": "#2965F1"
+    },
+    {
+        "name": "HTML",
+        "hex": "#E34F26"
+    },
+    {
+        "name": "Sass",
+        "hex": "#CC6699"
+    },
+    {
+        "name": "C#",
+        "hex": "#239120"
+    },
+    {
+        "name": "Kotlin",
+        "hex": "#7F52FF"
+    },
+    {
+        "name": "Spring",
+        "hex": "#6DB33F"
+    },
+    {
+        "name": "AWS",
+        "hex": "#FF9900"
+    },
+    {
+        "name": "Docker",
+        "hex": "#2496ED"
+    },
+    {
+        "name": "SQL",
+        "hex": "#CC2927"
+    }
+]
