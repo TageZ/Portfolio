@@ -9,7 +9,7 @@
 
         &.back{
             width: 75vw;
-            height: calc(37vw * 9/16 * 2 + 1vw);
+            height: auto;
             &.education{
                 height: calc(37vw * 9/16);
             }
