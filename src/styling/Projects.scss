@@ -34,9 +34,23 @@
     bottom: 2%;
     left: 2%;
     color: $accent-coral;
-    text-shadow: 0.1vw 0.1vw 0 black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+}
+
+@media (orientation: portrait){
+    .role-text{
+        color: white;
+        text-shadow: 0.1vw 0.1vw 0 black;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+@media (orientation: landscape){
+    .role-text{
+        text-shadow: 0.1vw 0.1vw 0 black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
 }
 
 .projects{

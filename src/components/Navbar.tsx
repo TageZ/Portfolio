@@ -11,7 +11,6 @@ function NavBar() {
 
   return (
     <nav className="navBar">
-      {/* <div className='nav-title'><span className="nav-text">Tage Zerby</span></div> */}
       <ul className='navBar-list'>
         <li className='navBar-list-item'><a href="#about" onClick={() => scrollToSection('About')}><span className="nav-text">ABOUT</span></a></li>
         <li className='navBar-list-item'><a href="#experience" onClick={() => scrollToSection('Experience')}><span className="nav-text">EXPERIENCE</span></a></li>

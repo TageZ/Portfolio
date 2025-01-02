@@ -1,16 +1,46 @@
 @import 'colors';
 
+@media (orientation: landscape){
+    .grid-item{
+        width: 37vw;
+        height: calc(37vw * 9/16);
+        border-radius: 1vw;
+        font-size: 1.5vw;
+
+        &.back{
+            width: 75vw;
+            height: calc(37vw * 9/16 * 2 + 1vw);
+            &.education{
+                height: calc(37vw * 9/16);
+            }
+            border-radius: 1vw;
+            border-width: 0.15vw;
+        }
+    }
+}
+
+@media (orientation: portrait){
+    .grid-item{
+        width: 80vw;
+        height: calc(80vw * 9/16);
+        border-radius: 3vw;
+        font-size: 5vw;
+
+        &.back{
+            width: 80vw;
+            border-radius: 1vw;
+            border-width: 0.15vw;
+        }
+    }
+}
+
 .grid-item{
     position: relative;
     text-align: center;
-    width: 37vw;
-    height: calc(37vw * 9/16);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 1vw;
-    font-size: 1.5vw;
     transition: 0.3s ease;
     
     &:hover{
@@ -19,15 +49,8 @@
     }
 
     &.back{
-        width: 75vw;
-        height: calc(37vw * 9/16 * 2 + 1vw);
-        &.education{
-            height: calc(37vw * 9/16);
-        }
         background: $accent-light-gray;
-        border-radius: 1vw;
         border-color: black;
-        border-width: 0.15vw;
         border-style: solid;
         display: flex;
         flex-direction: column;

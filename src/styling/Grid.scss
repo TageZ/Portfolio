@@ -5,10 +5,20 @@
     color: $text-color;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1vw;
+@media (orientation: landscape){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1vw;
+    }
+}
+
+@media (orientation: portrait){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 }
 
 .solo-box{

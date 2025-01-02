@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import '../styling/Box.scss';
 import data from '../utils/info.json';
+import { Modal, Box as B, Typography, Button } from "@mui/material";
 
 interface BoxProps {
     type?: string;
@@ -28,54 +30,51 @@ interface Info {
 }
 
 function Box(props: BoxProps) {
+    const [open, setOpen] = useState<boolean>(false);
     const info: Info = data;
 
-    function handleClick() {
-        if (props.tag) {
-            props.onBoxClick(props.tag);
-        }
-    }
 
-    function Front() {
-        return (
-            <div className='grid-item' onClick={handleClick}>
+    return (
+        <>
+            <div className='grid-item' onClick={() => setOpen(true)}>
                 <img className='experience-image' src={props.primaryImage} alt="Location" />
                 {props.company && <img className='company-image' src={props.company} alt="Company" />}
                 <span className='role-text'>{props.role}</span>
             </div>
-        );
-    }
-
-    function Back() {
-        return (
-            <div className={`grid-item back ${props.type}`} onClick={handleClick}>
-                <div className="title-name-box">
-                    {props.tag && <span className="title-back">{info[props.tag].title}</span>}
-                    {props.tag && <span className="name-back">{info[props.tag].name}</span>}
-                </div>
-                <div className='date-location-box'>
-                    {props.tag && <span className="date-back">{info[props.tag].date}</span>}
-                    {props.tag && info[props.tag].location && <span className="location-back"> | {info[props.tag].location}</span>}
-                </div>
-                <div className='info-image-box'>
-                    <div className='paragraph-box'>
-                        {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
-                        {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
-                        {props.tag && <span className="paragraph-back">{info[props.tag].p3}</span>}
-                        {props.tag && <span className="paragraph-back">{info[props.tag].p4}</span>}
+            <Modal
+                open={open}
+                onClose={() => setOpen(false)}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <div className={`grid-item back ${props.type}`} onClick={() => setOpen(false)}style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)"
+                }}>
+                    <div className="title-name-box">
+                        {props.tag && <span className="title-back">{info[props.tag].title}</span>}
+                        {props.tag && <span className="name-back">{info[props.tag].name}</span>}
                     </div>
-                    <div className='image-box'>
-                        {props.backImage && <img className='image-back' src={props.backImage} title={props.backImageAlt? props.backImageAlt : ""}/>}    
+                    <div className='date-location-box'>
+                        {props.tag && <span className="date-back">{info[props.tag].date}</span>}
+                        {props.tag && info[props.tag].location && <span className="location-back"> | {info[props.tag].location}</span>}
+                    </div>
+                    <div className='info-image-box'>
+                        <div className='paragraph-box'>
+                            {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
+                            {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
+                            {props.tag && info[props.tag].p3 && <span className="paragraph-back">{info[props.tag].p3}</span>}
+                            {props.tag && info[props.tag].p4 && <span className="paragraph-back">{info[props.tag].p4}</span>}
+                        </div>
+                        <div className='image-box'>
+                            {props.backImage && <img className='image-back' src={props.backImage} title={props.backImageAlt ? props.backImageAlt : ""} />}
+                        </div>
                     </div>
                 </div>
-            </div>
-        );
-    }
-
-    return (
-        <div>
-            {props.isVisible ? (!props.clickedBox || props.clickedBox !== props.tag ? <Front /> : <Back />) : null}
-        </div>
+            </Modal>
+        </>
     );
 }
 

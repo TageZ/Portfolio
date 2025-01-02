@@ -2,65 +2,16 @@
 
 .about{
     display: flex;
-    justify-content: space-between;
     width: 80vw;
     height: 100vh;
-    flex-direction: row;
     color: $text-color;
-}
-
-.about-info{
-    display: flex;
-    height: 100%;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-}
-
-.header{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-size: 6vw;
-    width: 100%;
-    // line-height: 1;
-}
-
-.text-primary{
-    color: $primary;
-}
-
-.text-accent{
-    color: $accent-coral;
-}
-
-.summary{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width: 90%;
-    line-height: 1.2;
-    overflow-wrap: break-word;
-    font-size: 2.2vw;
 }
 
 .about-photo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 40vw;
 }
-
-.headshot {
-    border-radius: 50%;
-    border: 0.5vw solid $primary;
-    width: 30vw;
-    height: auto;
-}
-
 
 .line {
     width: 80%;
@@ -75,4 +26,88 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    border: 0.5vw solid $primary;
+    height: auto;
+}
+
+.about-info{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (orientation: landscape){
+    .about{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-info{
+        width: 50%;
+        text-align: left;
+    }
+    
+    .header{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 6vw;
+        width: 100%;
+        // line-height: 1;
+    }
+    
+    .text-primary{
+        color: $primary;
+    }
+    
+    .text-accent{
+        color: $accent-coral;
+    }
+    
+    .summary{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        font-size: 2.2vw;
+    }
+    
+    .about-photo{
+        height: 100%;
+        width: 40vw;
+    }
+    
+    .headshot {
+        width: 30vw;
+    }
+
+}
+
+@media (orientation: portrait){
+    .about{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .headshot{
+        width: 80%;
+    }
+
+    .about-info{
+        text-align: center;
+    }
+
+    .links{
+        margin-top: 10px;
+    }
 }

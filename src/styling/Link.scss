@@ -1,15 +1,9 @@
 @import 'colors';
 
 .link {
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-    height: 5vw;
-    width: 5vw;
-    font-size: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1vw;
     background-color: $accent-coral;
     transition: 0.3s ease;
 
@@ -19,7 +13,38 @@
     }
 
     svg {
-        font-size: 4vw;
         color: $background;
+    }
+}
+
+@media (orientation: landscape){
+    .link {
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        height: 5vw;
+        width: 5vw;
+        font-size: 4vw;
+        border-radius: 1vw;
+
+    
+        svg {
+            font-size: 4vw;
+        }
+    }
+}
+
+@media (orientation: portrait){
+    .link{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 50px;
+        width: 50px;
+        font-size: 50px;
+        border-radius: 10px;
+        
+
+        svg {
+            font-size: 30px;
+        }
     }
 }

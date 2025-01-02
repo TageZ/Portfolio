@@ -1,15 +1,36 @@
-.skills{
-    width: 82%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1vw;
+@media (orientation: landscape) {
+    .skills{
+        width: 82%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1vw;
 
-    .skill{
-        height: 12vh;
-        font-size: 5vh;
-        display: flex;
+        .skill{
+            height: 12vh;
+            font-size: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2vh;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .skills{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 38%);
+        grid-gap: 10px;
         justify-content: center;
-        align-items: center;
-        border-radius: 2vh;
+
+        .skill{
+            height: 10vh;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2vh;
+        }
     }
 }
