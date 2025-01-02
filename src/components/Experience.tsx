@@ -9,6 +9,9 @@ import chicago from '../assets/chicago.jpg';
 import hudl from '../assets/hudl.png';
 import raikes from '../assets/raikes-school.png';
 import collins from '../assets/collins.png';
+import tenaska from '../assets/tenaska.png';
+import officeTenaska from '../assets/office-tenaska.png';
+import flowTracker from '../assets/flowTracker.png';
 import Box from './Box';
 
 function Experience() {
@@ -27,6 +30,17 @@ function Experience() {
             </div>
             <div className='experience'>
                 <div className={divName}>
+                    <Box
+                        primaryImage={officeTenaska}
+                        company={tenaska}
+                        backImage={flowTracker}
+                        backImageAlt='A new user interface I created to modernize an existing application owned by my team'
+                        role="Software Developer"
+                        tag="tenaska"
+                        clickedBox={clickedBox}
+                        isVisible={clickedBox === null || clickedBox === 'pfg'}
+                        onBoxClick={handleBoxClick}
+                    />
                     <Box
                         primaryImage={desmoines}
                         company={principal}

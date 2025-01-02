@@ -1,4 +1,13 @@
 {
+    "tenaska": {
+        "name": "Tenaska",
+        "title": "Software Developer",
+        "location": "Omaha, NE",
+        "date": "Fall 2024 -",
+        "p1": "Working in an Agile team of 5 to develop a web-application for monitoring Tenaska's natrual gas pipelines",
+        "p2": "Created multiple user-friendly UI components for the application in React.js using Scss and the MUI react library",
+        "p3": "Connected front end data table to backend API to regularly pull time-sensitive data from > 40 pipelines"
+    },
     "pfg": {
         "name": "Principal Financial Group",
         "title": "Software Engineering Intern",
