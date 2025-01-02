@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styling/Box.scss';
 import data from '../utils/info.json';
-import { Modal, Box as B, Typography, Button } from "@mui/material";
+import { Modal } from "@mui/material";
 
 interface BoxProps {
     type?: string;
