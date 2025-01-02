@@ -37,7 +37,6 @@
             font-size: 3vw;
             width: 100%;
             margin-bottom: .5vw;
-            color: $primary;
         }
 
         .date-location-box{
@@ -133,11 +132,13 @@
         }
     }
 
+
     .title-name-box{
         display: flex;
         padding: 1vw;
         flex-direction: column;
         width: calc(100% - 2vw);
+        color: $primary;
     }
     
     .date-location-box{
@@ -148,6 +149,7 @@
     
     .paragraph-box{
         height: 100%;
+        width: 100%;
         flex: 70%;
         display: grid;
         
