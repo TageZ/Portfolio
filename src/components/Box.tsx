@@ -46,6 +46,13 @@ function Box(props: BoxProps) {
                 onClose={() => setOpen(false)}
                 aria-labelledby="modal-title"
                 aria-describedby="modal-description"
+                slotProps={{
+                    backdrop: {
+                      sx: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+                      },
+                    },
+                }}
             >
                 <div className={`grid-item back ${props.type}`} onClick={() => setOpen(false)}style={{
                     position: "absolute",
