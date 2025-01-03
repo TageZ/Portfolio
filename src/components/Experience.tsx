@@ -12,6 +12,7 @@ import collins from '../assets/collins.png';
 import tenaska from '../assets/tenaska.png';
 import officeTenaska from '../assets/office-tenaska.png';
 import flowTracker from '../assets/flowTracker.png';
+import assist from '../assets/assist.jpg';
 import Box from './Box';
 
 function Experience() {
@@ -55,7 +56,7 @@ function Experience() {
                     <Box
                         primaryImage={lincoln}
                         company={hudl}
-                        backImage={hudl}
+                        backImage={assist}
                         role="Software Development Intern - Design Studio"
                         tag="hudl"
                         clickedBox={clickedBox}
