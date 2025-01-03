@@ -49,7 +49,7 @@ function Box(props: BoxProps) {
                 slotProps={{
                     backdrop: {
                       sx: {
-                        backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+                        backgroundColor: 'rgba(0, 0, 0, 0.95)', 
                       },
                     },
                 }}
@@ -58,7 +58,10 @@ function Box(props: BoxProps) {
                     position: "absolute",
                     top: "50%",
                     left: "50%",
-                    transform: "translate(-50%, -50%)"
+                    transform: "translate(-50%, -50%)",
+                    borderStyle: 'solid',
+                    borderColor: 'white',
+                    borderWidth: '2px'
                 }}>
                     <div className="title-name-box">
                         {props.tag && <span className="title-back">{info[props.tag].title}</span>}
