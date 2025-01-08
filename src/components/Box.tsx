@@ -72,12 +72,27 @@ function Box(props: BoxProps) {
                         {props.tag && info[props.tag].location && <span className="location-back"> | {info[props.tag].location}</span>}
                     </div>
                     <div className='info-image-box'>
-                        <div className='paragraph-box'>
+                        {props.type !== "education" && <div className='paragraph-box'>
                             {props.tag && <span className="paragraph-back">{info[props.tag].p1}</span>}
                             {props.tag && <span className="paragraph-back">{info[props.tag].p2}</span>}
-                            {props.tag && info[props.tag].p3 && <span className="paragraph-back">{info[props.tag].p3}</span>}
-                            {props.tag && info[props.tag].p4 && <span className="paragraph-back">{info[props.tag].p4}</span>}
-                        </div>
+                            {props.tag && <span className="paragraph-back">{info[props.tag].p3}</span>}
+                            {props.tag && <span className="paragraph-back">{info[props.tag].p4}</span>}
+                        </div>}
+                        {props.type === "education" && <div className='paragraph-box'>
+                            <h2>Academics</h2>
+                            {props.tag && <span className="paragraph-back"><ul>
+                                {info[props.tag].p1?.split('|').map((academic, i) => (
+                                    <li key={i}>{academic}</li>
+                                ))}
+                            </ul></span>}
+                            <h2>Honors</h2>
+                            {props.tag && <span className="paragraph-back"><ul>
+                                {info[props.tag].p3?.split(',').map((honor, i) => (
+                                    <li key={i}>{honor}</li>
+                                ))}
+                            </ul></span>}
+
+                        </div>}
                         <div className='image-box'>
                             {props.backImage && <img className='image-back' src={props.backImage} title={props.backImageAlt ? props.backImageAlt : ""} />}
                         </div>

@@ -1,5 +1,21 @@
 @import 'colors';
 
+.info-image-box::-webkit-scrollbar {
+    width: 0.4vw;
+}
+
+.info-image-box::-webkit-scrollbar-track {
+    background: $background;
+}
+
+.info-image-box::-webkit-scrollbar-thumb {
+    background-color: $primary;
+}
+
+.info-image-box::-webkit-scrollbar-thumb:hover {
+    background: $primary-hover;
+}
+
 @media (orientation: landscape){
     .grid-item{
         width: 37vw;
@@ -10,14 +26,27 @@
         &.back{
             width: 75vw;
             height: auto;
-            &.education{
-                height: calc(37vw * 9/16);
-            }
+            max-height: 90vh;
         }
 
         
         .image-box{
             max-width: 40%;
+            height: 100%;
+            position: sticky;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .paragraph-box{
+            max-width: 60%;
+        }
+
+        .info-image-box{
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: start;
         }
 
         .image-back{
@@ -80,6 +109,8 @@
 
         .info-image-box{
             flex-direction: column;
+            justify-content: left;
+            align-items: center;
         }
 
         .image-box{
@@ -163,10 +194,13 @@
         margin: 1vw 0 0;
         padding: 0 1vw;
         width: calc(100% - 2vw);
-        height: 100%;
+        overflow: auto;
         display: flex;
-        justify-content: left;
-        align-items: center;
         background-color: $accent-light-gray;
+
+        .info-box{
+            overflow: auto;
+        }
+
     }
 }
