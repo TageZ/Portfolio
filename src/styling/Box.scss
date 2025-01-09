@@ -1,18 +1,34 @@
 @import 'colors';
 
-.info-image-box::-webkit-scrollbar {
-    width: 0.4vw;
+.paragraph-box::-webkit-scrollbar {
+    width: 0.2vw;
 }
 
-.info-image-box::-webkit-scrollbar-track {
+.paragraph-box::-webkit-scrollbar-track {
     background: $background;
 }
 
-.info-image-box::-webkit-scrollbar-thumb {
+.paragraph-box::-webkit-scrollbar-thumb {
     background-color: $primary;
 }
 
-.info-image-box::-webkit-scrollbar-thumb:hover {
+.paragraph-box::-webkit-scrollbar-thumb:hover {
+    background: $primary-hover;
+}
+
+.education-box::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.education-box::-webkit-scrollbar-track {
+    background: $background;
+}
+
+.education-box::-webkit-scrollbar-thumb {
+    background-color: $primary;
+}
+
+.education-box::-webkit-scrollbar-thumb:hover {
     background: $primary-hover;
 }
 
@@ -32,27 +48,20 @@
         
         .image-box{
             max-width: 40%;
-            height: 100%;
-            position: sticky;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .paragraph-box{
-            max-width: 60%;
+            display: flex;
+            justify-content: center;
         }
 
         .info-image-box{
-            position: relative;
+            width: calc(100% - 1vw);
+            padding: 0 0 0 1vw;
             display: flex;
-            justify-content: start;
-            align-items: start;
+            justify-content: center;
+            align-items: center
         }
 
         .image-back{
             width: calc(100% - 2vw);
-            margin-left: 1vw;
-            margin-right: 1vw;
             border-radius: 1vw;
         }
 
@@ -74,12 +83,22 @@
 
         .paragraph-box{
 
-            .paragraph-back{
-                margin-top: 1vw;
-                margin-bottom: 1vw;
-                width: 90%;
-                font-size: 2vw;
-            }
+            max-width: 60%;
+            max-height: 60vh;
+            overflow: auto;
+        }
+
+        .paragraph-back{
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            width: 90%;
+            font-size: 2vw;
+        }
+
+        .education-box{
+            max-height: 60vh;
+            width: calc(100%);
+            overflow: auto;
         }
     }
 }
@@ -108,6 +127,8 @@
         }
 
         .info-image-box{
+            width: calc(100% - 2vw);
+            padding: 0 1vw;
             flex-direction: column;
             justify-content: left;
             align-items: center;
@@ -192,9 +213,6 @@
 
     .info-image-box{
         margin: 1vw 0 0;
-        padding: 0 1vw;
-        width: calc(100% - 2vw);
-        overflow: auto;
         display: flex;
         background-color: $accent-light-gray;
 

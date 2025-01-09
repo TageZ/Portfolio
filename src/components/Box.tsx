@@ -78,7 +78,7 @@ function Box(props: BoxProps) {
                             {props.tag && <span className="paragraph-back">{info[props.tag].p3}</span>}
                             {props.tag && <span className="paragraph-back">{info[props.tag].p4}</span>}
                         </div>}
-                        {props.type === "education" && <div className='paragraph-box'>
+                        {props.type === "education" && <div className='education-box'>
                             <h2>Academics</h2>
                             {props.tag && <span className="paragraph-back"><ul>
                                 {info[props.tag].p1?.split('|').map((academic, i) => (
