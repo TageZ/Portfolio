@@ -46,15 +46,19 @@
         "title": "University of Nebraska - Lincoln",
         "location": "Lincoln, NE",
         "date": "2022 - 2026",
-        "p1": "Bachelor of Science, Computer Science | Minors: Business Administration, Math | GPA: 4.00/4.00",
-        "p2": "Jeffrey S. Raikes School of Computer Science and Management: The Raikes School is a highly competitive computer science and business honors program at UNL which accepts 40 students a year."
+        "p1": "Bachelor of Science, Computer Science|Minors: Business Administration, Math|GPA: 4.00/4.00",
+        "p2": "The Jeffrey S. Raikes School of Computer Science and Management is a highly competitive computer science and business honors program at UNL which accepts 40 students a year.",
+        "p3": "Raikes Foundation Scholar,5x Dean's List",
+        "p4": "Computer Problem Solving, Software Development, Data Structures & Algorithms, Computer Systems Engineering, Unix, Software Engineering, Machine Learing 1-2, Language Concepts, Generative A.I., Operating System Principles",
+        "p5": "Innovation Processes, Accounting, Economics, Finance, Leadership 1-2",
+        "p6": "Calculus 1-2, Linear Algebra, Statistics & Applications, Discrete Math"
     },
     "scn": {
         "title": "Saint Charles North High School",
         "location": "Saint Charles, IL",
         "date": "Graduated May 2022",
-        "p1": "1500 SAT - 99th Percentile",
-        "p2": "4.34/4.00 GPA - Top 10% of Class"
+        "p1": "SAT: 1500 (99th Percentile)|GPA: 4.34/4.00|Rank: Top 10% of Class",
+        "p3": "Honors: 8x Honor Roll,AP Scholar with Distinction,2022 Senator Don Dewitte's Youth Advisory Council,Mock Trial Captain"
     },
     "pegsAndJokers": {
         "title": "Pegs & Jokers",
@@ -76,6 +80,6 @@
         "date": "Summer 2024",
         "p1": "The website that you are currently looking at!",
         "p2": "Developed a React.js/TypeScript application that dynamically displays my portfolio information; hosted using Firebase.",
-        "p3": "Designed a variety of UI components from scratch using SCSS."
+        "p3": "Designed a variety of UI components from scratch using SCSS, as well as a mobile/portrait specific view."
     }
 }
