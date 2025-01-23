@@ -100,6 +100,20 @@
             width: calc(100%);
             overflow: auto;
         }
+
+        .edu-section{
+            color: $primary;
+            font-size: 2.5vw;
+        }
+    
+        .course-list{
+            font-size: 1.5vw;
+            list-style-type: circle;
+        }
+    
+        .course-headers{
+            font-size: 2vw;
+        }
     }
 }
 
@@ -124,6 +138,7 @@
         &.back{
             width: 80vw;
             height: auto;
+            // max-height: 80vh;
         }
 
         .info-image-box{

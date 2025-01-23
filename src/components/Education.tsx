@@ -1,6 +1,7 @@
 import '../styling/Grid.scss'
 import scn from '../assets/scn.jpg'
 import unl from '../assets/unl.jpg'
+import kauffman from '../assets/kauffman.jpg'
 import Box from './Box'
 import { useState } from 'react';
 
@@ -23,6 +24,7 @@ function Education(){
                 <div className={divName}>
                     <Box
                         primaryImage={unl}
+                        backImage={kauffman}
                         role="University of Nebraska - Lincoln"
                         tag="unl"
                         clickedBox={clickedBox}
@@ -32,6 +34,7 @@ function Education(){
                     />
                     <Box
                         primaryImage={scn}
+                        backImage={scn}
                         role="Saint Charles North High School"
                         tag="scn"
                         clickedBox={clickedBox}

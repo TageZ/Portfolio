@@ -26,6 +26,8 @@ interface Info {
         p2?: string;
         p3?: string;
         p4?: string;
+        p5?: string;
+        p6?: string;
     };
 }
 
@@ -79,13 +81,57 @@ function Box(props: BoxProps) {
                             {props.tag && <span className="paragraph-back">{info[props.tag].p4}</span>}
                         </div>}
                         {props.type === "education" && <div className='education-box'>
-                            <h2>Academics</h2>
+                            <h2 className="edu-section">Academics</h2>
                             {props.tag && <span className="paragraph-back"><ul>
                                 {info[props.tag].p1?.split('|').map((academic, i) => (
                                     <li key={i}>{academic}</li>
                                 ))}
                             </ul></span>}
-                            <h2>Honors</h2>
+
+                            {props.tag === "unl" && 
+                            
+                            <>
+
+                            <h2 className="edu-section">Raikes School</h2>
+
+                            {props.tag && <span className="paragraph-back"><ul>{info[props.tag].p2}</ul></span>}
+
+                            <h2 className="edu-section">Coursework</h2>
+
+                            <ul>
+                                <li>
+                                    <h3 className='course-headers'>{'\t'}Computer Science</h3>
+                                    {props.tag && <span className="paragraph-back"><ul className="course-list">
+                                    {info[props.tag].p4?.split(',').map((course, i) => (
+                                        <li key={i}>{course}</li>
+                                    ))}
+                                    </ul></span>}
+                                </li>
+
+                                <li>
+                                    <h3 className='course-headers'>{'\t'}Business</h3>
+                                    {props.tag && <span className="paragraph-back"><ul className="course-list">
+                                    {info[props.tag].p5?.split(',').map((course, i) => (
+                                        <li key={i}>{course}</li>
+                                    ))}
+                                    </ul></span>}
+                                </li>
+
+                                <li>
+                                    <h3 className='course-headers'>{'\t'}Mathematics</h3>
+                                    {props.tag && <span className="paragraph-back"><ul className="course-list">
+                                    {info[props.tag].p6?.split(',').map((course, i) => (
+                                        <li key={i}>{course}</li>
+                                    ))}
+                                    </ul></span>}
+                                </li>
+                            </ul>
+
+                            </>
+                            
+                            }
+
+                            <h2 className="edu-section">Honors</h2>
                             {props.tag && <span className="paragraph-back"><ul>
                                 {info[props.tag].p3?.split(',').map((honor, i) => (
                                     <li key={i}>{honor}</li>
