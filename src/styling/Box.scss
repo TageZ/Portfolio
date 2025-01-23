@@ -16,22 +16,6 @@
     background: $primary-hover;
 }
 
-.education-box::-webkit-scrollbar {
-    width: 0.2vw;
-}
-
-.education-box::-webkit-scrollbar-track {
-    background: $background;
-}
-
-.education-box::-webkit-scrollbar-thumb {
-    background-color: $primary;
-}
-
-.education-box::-webkit-scrollbar-thumb:hover {
-    background: $primary-hover;
-}
-
 @media (orientation: landscape){
     .grid-item{
         width: 37vw;
@@ -102,13 +86,12 @@
         }
 
         .edu-section{
-            color: $primary;
             font-size: 2.5vw;
+            margin: 1vw 0 0;
         }
     
         .course-list{
             font-size: 1.5vw;
-            list-style-type: circle;
         }
     
         .course-headers{
@@ -138,7 +121,6 @@
         &.back{
             width: 80vw;
             height: auto;
-            // max-height: 80vh;
         }
 
         .info-image-box{
@@ -162,10 +144,25 @@
         }
 
         .paragraph-box{          
-        
+            
+            max-height: 40vh;
+            overflow: auto;
+            
             .paragraph-back{
-                margin: 2vh 0.5vw;
+                margin: 1vh 0.5vw;
                 font-size: 2vh;
+            }
+
+            .edu-section{
+                margin: 1vh 0 0;
+            }
+
+            ul{
+                padding: 0 2vw 0 8vw;
+            }
+
+            .course-headers{
+                margin: 1vh 0 0;
             }
         }
     }
@@ -219,7 +216,10 @@
         width: 100%;
         flex: 70%;
         display: grid;
-        
+
+        ul{
+            margin: 0;
+        }
     
         .paragraph-back{
             white-space: pre-wrap;
@@ -235,5 +235,13 @@
             overflow: auto;
         }
 
+    }
+
+    .edu-section{
+        color: $primary;
+    }
+
+    .course-list{
+        list-style-type: circle;
     }
 }
