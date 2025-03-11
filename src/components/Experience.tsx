@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import '../styling/Grid.scss';
+import garmin from "../assets/garmin-logo.png";
+import olathe from "../assets/garmin.png";
 import principal from '../assets/principal.png';
 import contractapp from '../assets/contractapp.png'
 import lincoln from '../assets/lincoln.jpg';
@@ -16,13 +17,6 @@ import assist from '../assets/assist.jpg';
 import Box from './Box';
 
 function Experience() {
-    const [clickedBox, setClickedBox] = useState<string | null>(null);
-
-    const handleBoxClick = (tag: string) => {
-        setClickedBox(clickedBox === tag ? null : tag);
-    };
-
-    const divName = clickedBox ? 'solo-box' : 'grid';
 
     return (
         <div className='portfolio-section' aria-label='experience'>
@@ -30,58 +24,48 @@ function Experience() {
                 EXPERIENCE
             </div>
             <div className='experience'>
-                <div className={divName}>
+                <div className="grid">
+                     <Box
+                        primaryImage={olathe}
+                        company={garmin}
+                        backImage={garmin}
+                        tag="garmin"
+                    />
+                    <Box
+                        primaryImage={officeTenaska}
+                        tag="daily-nebraskan"
+                    />
                     <Box
                         primaryImage={officeTenaska}
                         company={tenaska}
                         backImage={flowTracker}
                         backImageAlt='A new user interface I created to modernize an existing application owned by my team'
-                        role="Software Developer"
                         tag="tenaska"
-                        clickedBox={clickedBox}
-                        isVisible={clickedBox === null || clickedBox === 'pfg'}
-                        onBoxClick={handleBoxClick}
                     />
                     <Box
                         primaryImage={desmoines}
                         company={principal}
                         backImage={contractapp}
                         backImageAlt='A new user interface I created to modernize an existing application owned by my team'
-                        role="Software Engineering Intern"
                         tag="pfg"
-                        clickedBox={clickedBox}
-                        isVisible={clickedBox === null || clickedBox === 'pfg'}
-                        onBoxClick={handleBoxClick}
                     />
                     <Box
                         primaryImage={lincoln}
                         company={hudl}
                         backImage={assist}
-                        role="Software Development Intern - Design Studio"
                         tag="hudl"
-                        clickedBox={clickedBox}
-                        isVisible={clickedBox === null || clickedBox === 'hudl'}
-                        onBoxClick={handleBoxClick}
                     />
                     <Box
                         primaryImage={kauffman}
                         company={raikes}
                         backImage={raikes}
-                        role="Computer Science Teaching Assistant"
                         tag="raikes"
-                        clickedBox={clickedBox}
-                        isVisible={clickedBox === null || clickedBox === 'raikes'}
-                        onBoxClick={handleBoxClick}
                     />
                     <Box
                         primaryImage={chicago}
                         company={collins}
                         backImage={collins}
-                        role="IT Intern"
                         tag="collins"
-                        clickedBox={clickedBox}
-                        isVisible={clickedBox === null || clickedBox === 'collins'}
-                        onBoxClick={handleBoxClick}
                     />
                 </div>
             </div>

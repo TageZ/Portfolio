@@ -1,4 +1,18 @@
 {
+    "garmin": {
+        "name": "Garmin",
+        "title": "Software Engineering Intern",
+        "location": "Olathe, KS",
+        "date": "Summer 2025",
+        "p1": "Coming soon"
+    },
+    "daily-nebraskan": {
+        "name": "the Daily Nebraskan",
+        "title": "Software Developer",
+        "location": "Linoln",
+        "date": "Spring 2025 -",
+        "p1": "Coming soon"
+    },
     "tenaska": {
         "name": "Tenaska",
         "title": "Software Developer",
