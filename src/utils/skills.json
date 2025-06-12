@@ -1,54 +1,19 @@
 [
-    {
-        "name": "React",
-        "hex": "#61DAFB"
-    },
-    {
-        "name": "TypeScript",
-        "hex": "#3178C6"
-    },
-    {
-        "name": "Java",
-        "hex": "#B07219"
-    },
-    {
-        "name": "Python",
-        "hex": "#3776AB"
-    },
-    {
-        "name": "CSS",
-        "hex": "#2965F1"
-    },
-    {
-        "name": "HTML",
-        "hex": "#E34F26"
-    },
-    {
-        "name": "Sass",
-        "hex": "#CC6699"
-    },
-    {
-        "name": "C#",
-        "hex": "#178600"
-    },
-    {
-        "name": "Kotlin",
-        "hex": "#A97BFF"
-    },
-    {
-        "name": "Spring",
-        "hex": "#6DB33F"
-    },
-    {
-        "name": "AWS",
-        "hex": "#FF9900"
-    },
-    {
-        "name": "Docker",
-        "hex": "#2496ED"
-    },
-    {
-        "name": "SQL",
-        "hex": "#CC2927"
-    }
+    { "name": "React", "hex": "#61DAFB" },
+    { "name": "TypeScript", "hex": "#3178C6" },
+    { "name": "Java", "hex": "#B07219" },
+    { "name": "Vue", "hex": "#42B883" },
+    { "name": "Python", "hex": "#3776AB" },
+    { "name": "CSS", "hex": "#2965F1" },
+    { "name": "Sass", "hex": "#CC6699" },
+    { "name": "HTML", "hex": "#E34F26" },
+    { "name": "Node.js", "hex": "#339933" },
+    { "name": "Express.js", "hex": "#000000" },
+    { "name": "C#", "hex": "#178600" },
+    { "name": "Kotlin", "hex": "#A97BFF" },
+    { "name": "Spring", "hex": "#6DB33F" },
+    { "name": "AWS", "hex": "#FF9900" },
+    { "name": "Docker", "hex": "#2496ED" },
+    { "name": "SQL", "hex": "#CC2927" },
+    { "name": "Jenkins", "hex": "#D24939" }
 ]
