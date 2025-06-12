@@ -12,6 +12,9 @@ import raikes from '../assets/raikes-school.png';
 import collins from '../assets/collins.png';
 import tenaska from '../assets/tenaska.png';
 import officeTenaska from '../assets/office-tenaska.png';
+import dailyNebraskan from '../assets/DN.webp';
+import dnWebsite from '../assets/dn-website.png';
+import union from '../assets/union.jpg';
 import flowTracker from '../assets/flowTracker.png';
 import assist from '../assets/assist.jpg';
 import Box from './Box';
@@ -32,7 +35,9 @@ function Experience() {
                         tag="garmin"
                     />
                     <Box
-                        primaryImage={officeTenaska}
+                        primaryImage={union}
+                        backImage={dnWebsite}
+                        company={dailyNebraskan}
                         tag="daily-nebraskan"
                     />
                     <Box
